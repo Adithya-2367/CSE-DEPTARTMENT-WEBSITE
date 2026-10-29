@@ -1,0 +1,303 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>Department of Computer Science and Engineering | SRM TRP Engineering College, Trichy</title>
+<meta name="description" content="Department of Computer Science and Engineering, SRM TRP Engineering College, Trichy: UG and PG programmes, laboratories, placements, faculty, research and events.">
+<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700;800&family=Fira+Code:wght@400;500&display=swap" rel="stylesheet">
+<style>
+:root{--ink:#161236;--deep:#1a1446;--violet:#6c3df4;--cyan:#12c2e9;--coral:#ff6b6b;--amber:#ffc83d;--mint:#2ed8a3;--bg:#f7f6ff;--card:#fff;--muted:#5d5a7a;--line:#e4e1fb;
+box-sizing:border-box;padding-top:env(safe-area-inset-top,0px);padding-bottom:env(safe-area-inset-bottom,0px)}
+*{box-sizing:border-box}
+html{scroll-behavior:smooth;scroll-padding-top:76px}
+body{margin:0;font:16px/1.7 "Poppins",system-ui,Arial,sans-serif;background:var(--bg);color:var(--ink)}
+h1,h2,h3{line-height:1.15;margin:0}
+a{color:inherit}
+.wrap{max-width:1140px;margin:0 auto;padding:0 20px}
+.grad{background:linear-gradient(120deg,var(--violet),var(--cyan));-webkit-background-clip:text;background-clip:text;color:transparent}
+
+/* header */
+header{position:sticky;top:0;z-index:50;background:rgba(255,255,255,.92);backdrop-filter:blur(12px);border-bottom:1px solid var(--line)}
+.nav{display:flex;align-items:center;justify-content:space-between;height:70px;gap:16px}
+.logo{display:flex;align-items:center;gap:12px;text-decoration:none;font-weight:700;line-height:1.2}
+.logo i{width:42px;height:42px;border-radius:12px;background:linear-gradient(135deg,var(--violet),var(--cyan));display:grid;place-items:center;color:#fff;font:500 15px "Fira Code",monospace;font-style:normal}
+.logo small{display:block;font-weight:500;font-size:12px;color:var(--muted)}
+.menu{display:flex;gap:2px;list-style:none;margin:0;padding:0}
+.menu a{display:block;padding:9px 13px;border-radius:99px;text-decoration:none;font-weight:500;font-size:14.5px;color:var(--muted)}
+.menu a:hover{background:#efeaff;color:var(--violet)}
+.menu .apply{background:var(--violet);color:#fff;font-weight:600}
+.menu .apply:hover{background:var(--deep);color:#fff}
+.burger{display:none;background:none;border:0;font-size:28px;color:var(--deep);cursor:pointer}
+
+/* hero */
+.hero{background:radial-gradient(circle at 85% 20%,rgba(18,194,233,.35),transparent 45%),radial-gradient(circle at 10% 90%,rgba(255,107,107,.28),transparent 40%),linear-gradient(135deg,#150f3d,#2a1a7a);color:#fff;padding:90px 0 110px;overflow:hidden}
+.hero .wrap{display:grid;grid-template-columns:1.1fr .9fr;gap:40px;align-items:center}
+.pill{display:inline-block;background:rgba(255,255,255,.14);border:1px solid rgba(255,255,255,.25);padding:6px 16px;border-radius:99px;font-size:13.5px;margin-bottom:20px}
+.hero h1{font-size:clamp(34px,5.6vw,60px);font-weight:800;letter-spacing:-.02em}
+.hero h1 span{color:var(--amber)}
+.hero p{font-size:18px;color:#d9d4ff;max-width:52ch;margin:20px 0 30px}
+.btn{display:inline-block;padding:13px 26px;border-radius:99px;font-weight:600;text-decoration:none;margin:0 10px 12px 0;border:2px solid transparent;cursor:pointer;font-family:inherit;font-size:15px}
+.b1{background:var(--amber);color:#2b2000}
+.b2{border-color:rgba(255,255,255,.6);color:#fff}
+.btn:hover{transform:translateY(-2px)}
+
+.spot{background:rgba(255,255,255,.1);border:1px solid rgba(255,255,255,.25);border-radius:22px;padding:34px;text-align:center}
+.crown{display:inline-block;background:var(--amber);color:#2b2000;padding:5px 16px;border-radius:99px;font-weight:600;font-size:13.5px}
+.big{display:block;font-size:clamp(56px,9vw,88px);font-weight:800;line-height:1;margin:18px 0 8px;color:var(--amber)}
+.spot h3{font-size:24px}.spot p{margin:4px 0 0;color:#d9d4ff;font-size:15px}.spot small{display:block;margin-top:12px;color:#bdb6f0}
+.hl{background:linear-gradient(135deg,var(--violet),#8d68ff);color:#fff;border:0}
+.hl p{color:#efeaff;font-size:15.5px;margin:0 0 16px}.hl .logos span{background:rgba(255,255,255,.18);color:#fff}
+/* stats */
+.stats{display:grid;grid-template-columns:repeat(3,1fr);gap:18px;margin-top:-64px;position:relative;z-index:2}
+.stat{background:var(--card);border-radius:18px;padding:24px 18px;text-align:center;box-shadow:0 14px 34px rgba(60,40,160,.16);border-bottom:5px solid var(--violet)}
+.stat:nth-child(2){border-color:var(--cyan)}.stat:nth-child(3){border-color:var(--coral)}.stat:nth-child(4){border-color:var(--amber)}
+.stat b{display:block;font-size:34px;font-weight:800}
+.stat span{font-size:14px;color:var(--muted)}
+
+/* sections */
+section{padding:84px 0}
+.head{text-align:center;max-width:680px;margin:0 auto 48px}
+.head h2{font-size:clamp(28px,4.4vw,42px);font-weight:800}
+.head p{color:var(--muted);margin:12px 0 0}
+.tint{background:#efeaff}
+.dark{background:linear-gradient(135deg,#150f3d,#2a1a7a);color:#fff}
+.dark .head p{color:#cfc8ff}
+.grid{display:grid;gap:22px;grid-template-columns:repeat(auto-fit,minmax(255px,1fr))}
+.card{background:var(--card);border-radius:18px;padding:26px;border:1px solid var(--line);transition:transform .25s,box-shadow .25s}
+.card:hover{transform:translateY(-6px);box-shadow:0 18px 36px rgba(80,50,200,.16)}
+.ico{width:54px;height:54px;border-radius:15px;display:grid;place-items:center;font-size:26px;margin-bottom:16px;background:linear-gradient(135deg,#ece6ff,#d9f6ff)}
+.card h3{font-size:19px;margin-bottom:8px}
+.card p{margin:0;color:var(--muted);font-size:15px}
+.tag{display:inline-block;margin:14px 6px 0 0;padding:3px 12px;border-radius:99px;font-size:12.5px;font-weight:600;background:#efeaff;color:var(--violet)}
+.tag.o{background:#ffe9e9;color:#d63c3c}.tag.g{background:#dcfbf0;color:#0b8f69}.tag.y{background:#fff3cf;color:#8a6200}
+
+/* about */
+.about{display:grid;grid-template-columns:1fr 1fr;gap:44px;align-items:center}
+.about h2{font-size:clamp(28px,4vw,40px);font-weight:800;margin-bottom:14px}
+.about p{color:var(--muted)}
+.vm{display:grid;gap:16px}
+.vm div{border-radius:18px;padding:24px;color:#fff}
+.vm div:first-child{background:linear-gradient(135deg,var(--violet),#8d68ff)}
+.vm div:last-child{background:linear-gradient(135deg,var(--coral),#ff9a6b)}
+.vm h3{margin-bottom:6px}.vm p{margin:0;color:#fff;font-size:15px}
+
+/* tabs */
+.tabs{display:flex;justify-content:center;gap:8px;margin-bottom:30px;flex-wrap:wrap}
+.tabs button{border:2px solid var(--violet);background:#fff;color:var(--violet);padding:10px 26px;border-radius:99px;font:600 15px "Poppins",sans-serif;cursor:pointer}
+.tabs button.on{background:var(--violet);color:#fff}
+.panel[hidden]{display:none}
+.meta{display:flex;gap:16px;flex-wrap:wrap;margin-top:12px;font-size:13.5px;color:var(--muted)}
+.meta b{color:var(--ink)}
+
+/* labs */
+.dark .card{background:rgba(255,255,255,.07);border-color:rgba(255,255,255,.16);color:#fff}
+.dark .card p{color:#d3ccff}
+.dark .ico{background:rgba(255,255,255,.14)}
+
+/* placements */
+.two{display:grid;grid-template-columns:1fr 1fr;gap:24px}
+.chart{background:#fff;border-radius:18px;padding:26px;border:1px solid var(--line)}
+.chart h3{margin-bottom:16px}
+.row{display:grid;grid-template-columns:48px 1fr 52px;gap:12px;align-items:center;margin:12px 0;font-size:14.5px}
+.bar{height:16px;border-radius:99px;background:#efeaff;overflow:hidden}
+.bar i{display:block;height:100%;border-radius:99px;background:linear-gradient(90deg,var(--violet),var(--cyan))}
+.logos{display:flex;flex-wrap:wrap;gap:10px}
+.logos span{background:#efeaff;color:var(--deep);padding:8px 16px;border-radius:12px;font-weight:600;font-size:14px}
+.steps{list-style:none;margin:0;padding:0;counter-reset:s}
+.steps li{position:relative;padding:0 0 18px 52px;color:var(--muted);font-size:15px}
+.steps li::before{counter-increment:s;content:counter(s);position:absolute;left:0;top:0;width:36px;height:36px;border-radius:50%;background:var(--coral);color:#fff;display:grid;place-items:center;font-weight:700}
+.steps li::after{content:"";position:absolute;left:17px;top:38px;bottom:2px;width:2px;background:var(--line)}
+.steps li:last-child::after{display:none}
+.steps b{color:var(--ink)}
+
+/* faculty */
+.fac{text-align:center}
+.av{width:92px;height:92px;border-radius:50%;margin:0 auto 14px;display:grid;place-items:center;font-size:30px;font-weight:700;color:#fff;background:linear-gradient(135deg,var(--violet),var(--cyan))}
+.fac:nth-child(2) .av{background:linear-gradient(135deg,var(--coral),var(--amber))}
+.fac:nth-child(3) .av{background:linear-gradient(135deg,var(--mint),var(--cyan))}
+.fac:nth-child(4) .av{background:linear-gradient(135deg,var(--amber),var(--coral))}
+
+/* events */
+
+/* contact */
+.contact{display:grid;grid-template-columns:1fr 1.2fr;gap:28px}
+.info p{margin:0 0 14px;color:var(--muted)}
+.info b{color:var(--ink);display:block}
+form{background:#fff;border-radius:18px;padding:26px;border:1px solid var(--line);display:grid;gap:14px}
+input,textarea,select{width:100%;padding:12px 14px;border:1.5px solid var(--line);border-radius:12px;font:inherit;background:#fbfaff;color:var(--ink)}
+input:focus,textarea:focus,select:focus{outline:3px solid #cdbfff;border-color:var(--violet)}
+footer{background:var(--deep);color:#bdb6f0;padding:44px 0 26px;font-size:14.5px}
+footer .cols{display:grid;grid-template-columns:2fr 1fr 1fr;gap:30px}
+footer h4{color:#fff;margin:0 0 10px}
+footer a{display:block;text-decoration:none;margin:5px 0}
+footer a:hover{color:var(--amber)}
+.copy{border-top:1px solid rgba(255,255,255,.14);margin-top:28px;padding-top:18px;text-align:center}
+
+@media (max-width:900px){
+ .hero .wrap,.about,.two,.contact,footer .cols{grid-template-columns:1fr}
+ .stats{grid-template-columns:1fr}
+ .burger{display:block}
+ .menu{display:none;position:absolute;left:0;right:0;top:70px;background:#fff;flex-direction:column;padding:12px 20px 18px;border-bottom:1px solid var(--line)}
+ .menu.open{display:flex}
+ header .wrap{position:relative}
+}
+@media (prefers-reduced-motion:reduce){*{animation:none!important;transition:none!important}html{scroll-behavior:auto}}
+</style>
+</head>
+<body>
+
+<header><div class="wrap nav">
+<a class="logo" href="#home"><i>&lt;/&gt;</i><span>Computer Science and Engineering<small>SRM TRP Engineering College, Trichy</small></span></a>
+<button class="burger" id="burger" aria-label="Open menu">&#9776;</button>
+<ul class="menu" id="menu">
+<li><a href="#about">About</a></li><li><a href="#programmes">Programmes</a></li><li><a href="#labs">Labs</a></li>
+<li><a href="#placements">Placements</a></li><li><a href="#faculty">Faculty</a></li><li><a class="apply" href="#contact">Apply now</a></li>
+</ul>
+</div></header>
+
+<main>
+<div class="hero" id="home"><div class="wrap">
+<div>
+<span class="pill">&#127891; SRM TRP Engineering College, Trichy</span>
+<h1>Code the future. <span>Engineer</span> what comes next.</h1>
+<p>A department where strong fundamentals meet modern labs, real projects and focused placement training, for students who want to build great software and great careers.</p>
+<a class="btn b1" href="#programmes">Explore programmes</a><a class="btn b2" href="#placements">Placement record</a>
+</div>
+<div class="spot"><span class="crown">&#127942; Highest package</span><b class="big">48 LPA</b><h3>Adithya K U</h3><p>Computer Science and Engineering</p><small>SRM TRP Engineering College, Trichy</small></div>
+</div></div>
+
+<div class="wrap"><div class="stats">
+<div class="stat"><b>48 LPA</b><span>Highest package</span></div>
+<div class="stat"><b>UG + PG</b><span>B.Tech, M.Tech and Ph.D.</span></div>
+<div class="stat"><b data-n="6">0</b><span>Specialised laboratories</span></div>
+</div></div>
+
+<section id="about"><div class="wrap about">
+<div>
+<h2>Where curiosity becomes <span class="grad">capability</span></h2>
+<p>The Department of Computer Science and Engineering prepares students for careers in software development, data science, artificial intelligence, cyber security and research. Our curriculum is reviewed regularly with industry experts so that what you learn in class matches what employers need.</p>
+<p>Every student works on projects from the first year, joins technical clubs, takes part in hackathons and completes internships before graduating.</p>
+<span class="tag">Industry-aligned curriculum</span><span class="tag o">Hands-on labs</span><span class="tag g">Mentoring</span><span class="tag y">Higher studies guidance</span>
+</div>
+<div class="vm">
+<div><h3>Our vision</h3><p>To be a centre of excellence in computing education and research that produces skilled, ethical and innovative engineers.</p></div>
+<div><h3>Our mission</h3><p>To deliver quality teaching, encourage research and projects, and build strong links with industry and society.</p></div>
+</div>
+</div></section>
+
+<section class="tint" id="programmes"><div class="wrap">
+<div class="head"><h2>UG and PG <span class="grad">programmes</span></h2><p>Pick a level to see the courses on offer. All programmes include lab work and a final project.</p></div>
+<div class="tabs"><button class="on" data-t="ug">Undergraduate (B.Tech)</button><button data-t="pg">Postgraduate (M.Tech)</button><button data-t="ph">Research (Ph.D.)</button></div>
+
+<div class="grid panel" id="ug">
+<div class="card"><div class="ico">&#128187;</div><h3>B.Tech in Computer Science and Engineering</h3><p>Programming, data structures, algorithms, operating systems, databases, networks and software engineering.</p><div class="meta"><span><b>4 years</b></span><span><b>8 semesters</b></span></div></div>
+<div class="card"><div class="ico">&#129302;</div><h3>B.Tech in CSE (AI and Data Science)</h3><p>Machine learning, deep learning, data engineering, statistics and applied AI projects.</p><div class="meta"><span><b>4 years</b></span><span><b>Specialisation</b></span></div></div>
+<div class="card"><div class="ico">&#128274;</div><h3>B.Tech in CSE (Cyber Security)</h3><p>Cryptography, secure systems, network defence, digital forensics and ethical hacking.</p><div class="meta"><span><b>4 years</b></span><span><b>Specialisation</b></span></div></div>
+</div>
+
+<div class="grid panel" id="pg" hidden>
+<div class="card"><div class="ico">&#127979;</div><h3>M.Tech in Computer Science and Engineering</h3><p>Advanced algorithms, distributed systems, cloud computing and research methodology, ending in a thesis.</p><div class="meta"><span><b>2 years</b></span><span><b>4 semesters</b></span></div></div>
+<div class="card"><div class="ico">&#129504;</div><h3>M.Tech in Artificial Intelligence</h3><p>Deep learning, natural language processing, computer vision and reinforcement learning.</p><div class="meta"><span><b>2 years</b></span><span><b>Thesis</b></span></div></div>
+<div class="card"><div class="ico">&#128737;</div><h3>M.Tech in Cyber Security</h3><p>Advanced cryptography, malware analysis, secure software design and security operations.</p><div class="meta"><span><b>2 years</b></span><span><b>Thesis</b></span></div></div>
+</div>
+
+<div class="grid panel" id="ph" hidden>
+<div class="card"><div class="ico">&#128300;</div><h3>Ph.D. in Computer Science and Engineering</h3><p>Full-time and part-time research under department faculty in AI, security, networks, data and software engineering.</p><div class="meta"><span><b>3 to 5 years</b></span><span><b>Coursework + thesis</b></span></div></div>
+<div class="card"><div class="ico">&#128221;</div><h3>Eligibility and admission</h3><p>UG: Class 12 with Mathematics and an entrance score. PG: relevant B.Tech degree with a valid GATE or entrance score. Check the admissions office for the latest rules.</p></div>
+</div>
+</div></section>
+
+<section class="dark" id="labs"><div class="wrap">
+<div class="head"><h2>Our <span style="color:var(--amber)">laboratories</span></h2><p>Students spend a large part of their time building and testing in well-equipped labs.</p></div>
+<div class="grid">
+<div class="card"><div class="ico">&#129302;</div><h3>AI and Machine Learning Lab</h3><p>GPU workstations for training models, with Python, TensorFlow and PyTorch.</p></div>
+<div class="card"><div class="ico">&#128272;</div><h3>Cyber Security Lab</h3><p>Isolated network for practising attacks and defences safely.</p></div>
+<div class="card"><div class="ico">&#128225;</div><h3>Networks and IoT Lab</h3><p>Routers, switches, sensors and development boards for connected systems.</p></div>
+<div class="card"><div class="ico">&#9881;</div><h3>Software Engineering Lab</h3><p>Team projects with Git, testing tools and continuous integration.</p></div>
+<div class="card"><div class="ico">&#9729;</div><h3>Database and Cloud Lab</h3><p>Cloud accounts and database servers for large-scale data work.</p></div>
+<div class="card"><div class="ico">&#127919;</div><h3>Programming and Algorithms Lab</h3><p>First-year coding practice with mentors and weekly contests.</p></div>
+</div></div></section>
+
+<section id="placements"><div class="wrap">
+<div class="head"><h2>Placements that <span class="grad">open doors</span></h2><p>Students are trained from the second year, so they are ready when campus recruitment begins.</p></div>
+<div class="two">
+<div class="chart hl"><span class="crown">&#127942; Highest package</span><b class="big">48 LPA</b><h3>Adithya K U</h3><p>Adithya K U of our Computer Science and Engineering department secured the highest package of 48 LPA. His success shows what steady practice in coding, problem solving and interviews can achieve.</p><div class="logos"><span>Coding practice</span><span>Problem solving</span><span>Mock interviews</span></div></div>
+<div class="chart"><h3>Your path to a job</h3>
+<ol class="steps">
+<li><b>Year 1 to 2:</b> programming, aptitude and communication skills.</li>
+<li><b>Year 2 to 3:</b> data structures, projects, coding contests and certifications.</li>
+<li><b>Summer of year 3:</b> internships with partner companies.</li>
+<li><b>Year 4:</b> mock interviews, resume clinics and campus drives.</li>
+<li><b>Offer:</b> join a company or move to higher studies.</li>
+</ol></div>
+</div></div></section>
+
+<section class="tint" id="faculty"><div class="wrap">
+<div class="head"><h2>Meet our <span class="grad">faculty</span></h2><p>Experienced teachers and researchers who mentor students every day.</p></div>
+<div class="grid">
+<div class="card fac"><div class="av">KI</div><h3>Dr. Kavish I</h3><p>Faculty, Department of Computer Science and Engineering</p></div>
+<div class="card fac"><div class="av">DB</div><h3>Dr. Dhakshin B</h3><p>Faculty, Department of Computer Science and Engineering</p></div>
+<div class="card fac"><div class="av">CS</div><h3>Dr. Chandru S</h3><p>Faculty, Department of Computer Science and Engineering</p></div>
+<div class="card fac"><div class="av">BS</div><h3>Dr. Bala Sundar</h3><p>Faculty, Department of Computer Science and Engineering</p></div>
+</div></div></section>
+
+<section id="contact"><div class="wrap">
+<div class="head"><h2>Get in <span class="grad">touch</span></h2><p>Questions about admissions, programmes or placements? Write to us.</p></div>
+<div class="contact">
+<div class="info">
+<p><b>Address</b>Department of Computer Science and Engineering, SRM TRP Engineering College, Trichy, Tamil Nadu</p>
+<p><b>Email</b>srmtrptrichy@edu.in</p>
+<p><b>Phone</b>0421-657890</p>
+<p><b>Office hours</b>Monday to Friday, 9:00 am to 4:30 pm</p>
+</div>
+<form id="f">
+<input id="n" placeholder="Your name" required>
+<input id="e" type="email" placeholder="Your email" required>
+<select id="s"><option>UG admission</option><option>PG admission</option><option>Placements</option><option>Other</option></select>
+<textarea id="m" rows="4" placeholder="Your message" required></textarea>
+<button class="btn b1" type="submit" style="margin:0">Send message</button>
+</form>
+</div></div></section>
+</main>
+
+<footer><div class="wrap">
+<div class="cols">
+<div><h4>Department of Computer Science and Engineering</h4>Building skilled and ethical engineers through teaching, labs, research and industry links.</div>
+<div><h4>Explore</h4><a href="#programmes">Programmes</a><a href="#labs">Labs</a><a href="#placements">Placements</a><a href="#faculty">Faculty</a></div>
+<div><h4>Connect</h4><a href="#contact">Contact us</a></div>
+</div>
+<div class="copy">&copy; 2026 Department of Computer Science and Engineering, SRM TRP Engineering College, Trichy. All rights reserved.</div>
+</div></footer>
+
+<script>
+(function(){
+var menu=document.getElementById('menu');
+document.getElementById('burger').onclick=function(){menu.classList.toggle('open')};
+menu.onclick=function(e){if(e.target.tagName==='A')menu.classList.remove('open')};
+document.querySelectorAll('.tabs button').forEach(function(b){
+ b.onclick=function(){
+  document.querySelectorAll('.tabs button').forEach(function(x){x.classList.toggle('on',x===b)});
+  document.querySelectorAll('.panel').forEach(function(p){p.hidden=p.id!==b.dataset.t});
+ };
+});
+var done=false;
+function count(){
+ if(done)return;done=true;
+ document.querySelectorAll('[data-n]').forEach(function(el){
+  var t=+el.dataset.n,s=el.dataset.s||'',i=0,step=Math.max(1,Math.ceil(t/40));
+  var id=setInterval(function(){i=Math.min(t,i+step);el.textContent=i+s;if(i>=t)clearInterval(id)},35);
+ });
+}
+if('IntersectionObserver' in window){
+ new IntersectionObserver(function(en,ob){if(en[0].isIntersecting){count();ob.disconnect()}}).observe(document.querySelector('.stats'));
+}else{count()}
+document.getElementById('f').onsubmit=function(ev){
+ ev.preventDefault();
+ var q='mailto:srmtrptrichy@edu.in?subject='+encodeURIComponent(document.getElementById('s').value+' enquiry from '+document.getElementById('n').value)+'&body='+encodeURIComponent(document.getElementById('m').value+'\n\nReply to: '+document.getElementById('e').value);
+ window.location.href=q;
+};
+})();
+</script>
+</body>
+</html>
